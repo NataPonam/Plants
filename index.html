@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Plants.RS</title>
+  <style>
+    .body {
+      background-color: #EDF2EC;
+      margin: 0;
+      padding: 0;
+      font-style: normal;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 42px 110px;
+    }
+
+    .menu__list {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+      line-height: 50px;
+    }
+
+    .menu__item {
+      list-style: none;
+      padding-left: 46px;
+      font-family: 'Inika';
+      font-size: 16px;
+      line-height: 50px;
+
+    }
+
+    .menu__link {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .menu__link:hover {
+      color: rgba(224, 103, 51, 1);
+      transition: 0.5s;
+    }
+
+    .welcome {
+      padding: 54px 0;
+    }
+
+
+
+    .section__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 110px;
+      margin: 0 auto;
+    }
+
+    .section__container {
+      max-width: 549px;
+    }
+
+    .section__button {
+      margin: 63px 0 0;
+      padding: 0;
+      width: 158px;
+      height: 44px;
+      background: inherit;
+      border: 2px solid #E06733;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .section__button:hover {
+      background-color: #E06733;
+      color: #fff;
+      transition: 0.5s;
+    }
+
+    .section__text {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: rgba(99, 96, 96, 1);
+    }
+
+    .section__title {
+      margin: 0 0 42px;
+      font-family: 'Inter';
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 50px;
+      color: #717171;
+    }
+
+    .section__subtitle {
+      margin-bottom: 40px;
+      /*проверить*/
+      padding: 0;
+      font-family: 'Inika';
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 52px;
+      color: #499A18;
+      /*width: 94px;*/
+
+    }
+
+    .text-green {
+      color: rgba(73, 154, 24, 1);
+    }
+
+    .text-orange {
+      color: #E06733;
+    }
+
+    .about {
+      background-color: #fff;
+      max-height: 666px;
+      padding: 93px 0;
+    }
+
+    .service {
+      max-height: 1300px;
+    }
+
+    .button-box {
+      display: flex;
+      margin-left: 142px;
+      flex: 2;
+    }
+
+    .service__button {
+      width: 161px;
+      height: 50px;
+      background: inherit;
+      border: 1px solid #E06733;
+      border-radius: 5px;
+      font-family: 'Inika';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      color: #E06733;
+      padding: 0;
+      margin: 0 38px 0 0;
+    }
+
+    .service {
+      padding: 40px 110px;
+    }
+
+    .service__container {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      margin-bottom: 90px;
+    }
+
+    /*CARDS*/
+    .service__cards {
+      border: 1px solid rgba(227, 225, 213, 1);
+      border-radius: 20px;
+      width: 329px;
+    }
+
+    .card__text-box {
+      text-align: center;
+    }
+
+    .card__title {
+      font-family: 'Inter';
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      color: #E06733;
+      margin: 10px 0;
+      padding: 0;
+    }
+
+    .card__subtitle {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #717171;
+      margin: 0 0 36px 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <!--Header-->
+  <header class="header">
+    <img src="./img_pl/logo.svg" class="logo logo_place_header" alt="логотип компании">
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="#about">About Us</a></li>
+        <li class="menu__item"><a class="menu__link" href="#service">Service</a></li>
+        <li class="menu__item"><a class="menu__link" href="#prices">Price</a></li>
+        <li class="menu__item"><a class="menu__link" href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <!--Main content-->
+  <main class="main">
+    <section class="section welcome" id="welcome">
+      <div class="section__wrapper">
+        <img src="./img_pl/leafs.png" class="welcome__image" alt="leafs">
+        <div class="section__container">
+          <h1 class="section__title">We grow<span class="text-green"> plants</span> and give you oxygen</h1>
+          <p class="section__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          <button class="section__button">Learn more</button>
+        </div>
+      </div>
+
+    </section>
+    <section class="section about" id="about">
+      <div class="section__wrapper">
+        <div class="section__container">
+          <h2 class="section__subtitle">We are<span class="text-orange"> professional experienced</span> gardeners</h2>
+          <p class="section__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+            also the leap into electronic typesetting, remaining essentially unchanged. </p>
+        </div>
+        <img src="./img_pl/houseplant 1.png" class="about__image" alt="house plant">
+      </div>
+    </section>
+    <section class="section service" id="service">
+      <div class="service__container">
+        <h2 class="section__subtitle">Service and our projects</h2>
+        <div class="button-box">
+          <button class="service__button">Gardens</button>
+          <button class="service__button">Lawn</button>
+          <button class="service__button">Planting</button>
+        </div>
+      </div>
+
+      <div class="service__cards">
+        <img class="card__image" src="./img_pl/first.png" alt="woman in the garden">
+        <div class="card__text-box">
+          <h3 class="card__title">Garden care</h3>
+          <p class="card__subtitle">Lorem Ipsum has been the industry</p>
+        </div>
+      </div>
+
+
+
+    </section>
+    <section class="section prices" id="prices">
+
+    </section>
+    <section class="section contacts" id="contacts">
+
+    </section>
+  </main>
+
+  <!--Footer-->
+
+  <footer class="footer">
+
+  </footer>
+</body>
+
+</html>
