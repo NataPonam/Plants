@@ -9,332 +9,7 @@
   <link rel="stylesheet" href="./style.css">
   <title>Plants.RS</title>
   <style>
-    .body {
-      background-color: #EDF2EC;
-      margin: 0;
-      padding: 0;
-      font-style: normal;
-    }
 
-    .header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 42px 110px;
-    }
-
-    .menu__list {
-      display: flex;
-      padding: 0;
-      margin: 0;
-      font-size: 16px;
-      line-height: 50px;
-    }
-
-    .menu__item {
-      list-style: none;
-      padding-left: 46px;
-      font-family: 'Inika';
-      font-size: 16px;
-      line-height: 50px;
-
-    }
-
-    .menu__link {
-      text-decoration: none;
-      color: #000;
-    }
-
-    .menu__link:hover {
-      color: rgba(224, 103, 51, 1);
-      transition: 0.5s;
-    }
-
-    .welcome {
-      padding: 54px 0;
-    }
-
-    .section__wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 110px;
-      margin: 0 auto;
-    }
-
-    .section__container {
-      max-width: 549px;
-    }
-
-    .section__button {
-      margin: 63px 0 0;
-      padding: 0;
-      width: 158px;
-      height: 44px;
-      background: inherit;
-      border: 2px solid #E06733;
-      border-radius: 10px;
-      text-transform: uppercase;
-      font-family: 'Inter';
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
-    }
-
-    .section__button:hover,
-    .service__button:hover,
-    .service__button_bold:hover {
-      background-color: #E06733;
-      color: #fff;
-      transition: 0.5s;
-    }
-
-    .section__text {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter';
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 30px;
-      color: rgba(99, 96, 96, 1);
-    }
-
-    .section__title {
-      margin: 0 0 42px;
-      font-family: 'Inter';
-      font-weight: 700;
-      font-size: 45px;
-      line-height: 50px;
-      color: #717171;
-    }
-
-    .section__subtitle {
-      margin-bottom: 40px;
-      padding: 0;
-      font-family: 'Inika';
-      font-weight: 400;
-      font-size: 40px;
-      line-height: 52px;
-      color: #499A18;
-    }
-
-    .service__subtitle {
-      width: 306px;
-      margin: 0;
-    }
-
-    .text-green {
-      color: rgba(73, 154, 24, 1);
-    }
-
-    .text-orange {
-      color: #E06733;
-    }
-
-    .about {
-      background-color: #fff;
-      max-height: 666px;
-      padding: 93px 0;
-    }
-
-    .service {
-      max-height: 1300px;
-    }
-
-    .button-box {
-      display: flex;
-      margin-left: 142px;
-      flex: 2;
-    }
-
-    .service__button {
-      width: 161px;
-      height: 50px;
-      background: inherit;
-      border: 1px solid #E06733;
-      border-radius: 5px;
-      font-family: 'Inika';
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 26px;
-      color: #E06733;
-      padding: 0;
-      margin: 0 38px 0 0;
-    }
-
-    .service__button_bold {
-      font-weight: 700;
-      margin: 38px 0;
-    }
-
-    .service {
-      padding: 40px 110px 121px;
-    }
-
-    .service__container {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      margin-bottom: 90px;
-    }
-
-    /*CARDS*/
-    .service__cards {
-      border: 1px solid rgba(227, 225, 213, 1);
-      border-radius: 20px;
-      width: 329px;
-    }
-
-    .card__text-box {
-      text-align: center;
-    }
-
-    .card__title {
-      font-family: 'Inter';
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 20px;
-      color: #E06733;
-      margin: 10px 0;
-      padding: 0;
-    }
-
-    .card__subtitle {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
-      color: #717171;
-      margin: 0 0 36px 0;
-      padding: 0;
-    }
-
-    .service__grid {
-      display: grid;
-      justify-content: center;
-      gap: 55px 104px;
-      grid-template-columns: repeat(3, 330px);
-      grid-template-rows: repeat(2, 450px);
-    }
-
-    .prices {
-      background-color: #fff;
-      margin: 0;
-      padding: 40px 110px 115px
-    }
-
-    .prices__container {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .prices__container_right-column {
-      width: 452px;
-      text-align: right;
-    }
-
-    .prices__subtitle {
-      font-family: 'Inter';
-      font-weight: 700;
-      line-height: 48px;
-      color: #000000;
-      margin: 0;
-    }
-
-    .prices__box {
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      margin: 0;
-      margin-top: 60px;
-      padding: 32px 41px 0;
-      list-style: none;
-      border: 1px solid #E3E1D5;
-      border-radius: 20px;
-      width: 332px;
-      font-family: 'Inter';
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 20px;
-      color: #000000;
-
-    }
-
-    .prices__box_item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #EDF2EC;
-      border-radius: 20px;
-      width: 250px;
-      height: 50px;
-      margin-bottom: 32px;
-      padding: 0 40px;
-      box-sizing: border-box;
-    }
-
-    .prices__button {
-      background-image: url(./img_pl/accordion_btn.svg);
-      border-style: none;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-    }
-
-    .contacts {
-      display: flex;
-      justify-content: space-between;
-      padding: 53px 110px 0
-    }
-
-    .contacts__location {
-      box-sizing: border-box;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 450px;
-      height: 50px;
-      background-color: #D6E7D2;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      margin-top: calc(148px - 53px);
-      padding: 0 20px;
-    }
-
-    .contacts__subtitle {
-      font-weight: 700;
-      margin-top: 7px;
-    }
-
-    .location__text {
-      line-height: 40px;
-      letter-spacing: 0.05em;
-      color: #717171;
-    }
-
-    .footer {
-      box-sizing: border-box;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #fff;
-      padding: 40px 110px;
-      font-family: 'Inter';
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 50px;
-      color: #000;
-    }
-
-    .footer__social {
-      height: 32px;
-    }
-
-    .img__link,
-    .footer__link {
-      text-decoration: none;
-      color: #000;
-    }
   </style>
 </head>
 
@@ -376,7 +51,7 @@
             galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
             also the leap into electronic typesetting, remaining essentially unchanged. </p>
         </div>
-        <img src="./img_pl/houseplant 1.png" class="about__image" alt="house plant">
+        <img src="./img_pl/houseplant_1.png" class="about__image" alt="house plant">
       </div>
     </section>
     <section class="section service" id="service">
@@ -442,7 +117,7 @@
             <li class="prices__box_item">
               <h4 class="box__text">Basics</h4>
               <button class="prices__button"></button>
-            </li class="prices__box_item">
+            </li>
             <li class="prices__box_item">
               <h4 class="box__text">Standard</h4>
               <button class="prices__button"></button>
@@ -457,12 +132,13 @@
           <h2 class="section__subtitle prices__subtitle">Our best <span class="text-green">gardeners</span> are ready
             to help you</h2>
           <button class="service__button service__button_bold">Contact us</button>
-          <div class="prices__img-wrapper"><img class="prices__img" src="./img_pl/leafs_xs.png"></div>
+          <div class="prices__img-wrapper"><img class="prices__img" src="./img_pl/leafs_xs.png" alt="small leafs"></div>
         </div>
+      </div>
     </section>
 
     <section class="section contacts" id="contacts">
-      <img class="contacts__img" src="./img_pl/contact_woman 1.png" alt="woman-gardener">
+      <img class="contacts__img" src="./img_pl/contact_woman_1.png" alt="woman-gardener">
       <h2 class="section__subtitle contacts__subtitle">Contact us</h2>
       <div class="contacts__location">
         <p class="section__text location__text">City</p>
@@ -474,18 +150,15 @@
   <!--Footer-->
 
   <footer class="footer">
-    <p class="footer__year">&copy; 2023
-      <a class="footer__link" href="https://github.com/NataPonam/Plants.git">github</a>
+    <p class="footer__year">&copy; 2023<a class="footer__link" href="https://github.com/NataPonam/Plants.git">github</a>
     </p>
     <p class="footer__Rsschool">Rolling Scopes School</p>
     <div class="footer__social">
-      <a class="img__link" href="#"><img class="img__inst" src="./img_pl/inst 1.svg"></a>
-      <a class="img__link" href="#"><img class="img__inst" src="./img_pl/fb 1.svg"></a>
-      <a class="img__link" href="#"><img class="img__inst" src="./img_pl/tw 1.svg"></a>
-      <a class="img__link" href="#"><img class="img__inst" src="./img_pl/pinterest 1.svg"></a>
+      <a class="img__link" href="#"><img class="img__social" src="./img_pl/inst_1.svg" alt="instagram icon"></a>
+      <a class="img__link" href="#"><img class="img__social" src="./img_pl/fb_1.svg" alt="facebook icon"></a>
+      <a class="img__link" href="#"><img class="img__social" src="./img_pl/tw_1.svg" alt="tweeter icon"></a>
+      <a class="img__link" href="#"><img class="img__social" src="./img_pl/pinterest_1.svg" alt="pinterest icon"></a>
     </div>
-
-
   </footer>
 </body>
 
