@@ -1,1 +1,1 @@
-https://github.com/NataPonam/Plants.git
+https://nataponam.github.io/Plants/index.html
